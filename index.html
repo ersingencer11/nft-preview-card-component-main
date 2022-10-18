@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+
+  <style>
+    body {
+      padding: 0px;
+      margin: 0px;
+      background-color: hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    @media screen and (min-width: 320px) {
+      .card {
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 15px;
+        margin: auto;
+        width: 90%;
+        padding: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        box-shadow: 10px 10px 10px 10px;
+        overflow: auto;
+      }
+      .header>img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      h2 {
+        color: hsl(0, 0%, 100%);
+      }
+
+      p {
+        color: hsl(215, 51%, 70%);
+      }
+
+      .main-item {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .main-item>div {
+        display: flex;
+        align-items: center;
+      }
+
+      .footer {
+        display: flex;
+        font-size: smaller;
+
+      }
+
+      .footer-item1 {
+        width: 15%;
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-item1>img {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+
+      .footer-item2 {
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+      }
+      
+    }
+
+    @media screen and (min-width: 1024px) {
+
+      .card {
+
+        background-color: hsl(216, 50%, 16%);
+        border-radius: 15px;
+        margin: auto;
+        width: 20%;
+        padding: 1%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        box-shadow: 10px 10px 10px 10px;
+        overflow: auto;
+        /* word-wrap: break-word; */
+      }
+
+      .header>img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      h2 {
+        color: hsl(0, 0%, 100%);
+      }
+
+      p {
+        color: hsl(215, 51%, 70%);
+      }
+
+      .main-item {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .main-item>div {
+        display: flex;
+        align-items: center;
+      }
+
+      .footer {
+        display: flex;
+        font-size: smaller;
+
+      }
+
+      .footer-item1 {
+        width: 15%;
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-item1>img {
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+
+      .footer-item2 {
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="header">
+      <img src="images/image-equilibrium.jpg" alt="image-equilibrium">
+    </div>
+
+    <div class="main">
+      <h2>Equilibrium #3429</h2>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="main-item">
+        <div>
+          <img src="/images/icon-ethereum.svg">
+          <p style="color: hsl(178, 100%, 50%);margin-left: 5px;">0.041 ETH</p>
+        </div>
+        <div>
+          <img src="/images/icon-clock.svg">
+          <p style="margin-left: 5px;">3 days left</p>
+        </div>
+      </div>
+
+    </div>
+
+    <hr style="clear:both; border-color: hsl(215, 51%, 70%);">
+    <br>
+
+    <div class="footer">
+      <div class="footer-item1">
+        <img src="/images/image-avatar.png">
+      </div>
+      <div class="footer-item2">
+        <p>Creation of <span style="color:hsl(0, 0%, 100%);"> Jules Wyvern</span< /p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
